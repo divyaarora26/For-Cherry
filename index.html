@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Valentine’s Day ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- START BUTTON FOR MUSIC ON MOBILE -->
+  <button id="startBtn" onclick="startMusic()" class="start-btn">
+    Tap to Start 💖
+  </button>
+
+  <!-- BACKGROUND MUSIC -->
+  <audio id="bgMusic" loop>
+    <source src="music/song.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- PHASE 1 -->
+  <div id="phase1" class="phase">
+    <h1>Happy Valentine’s Day<br>My Muse ❤️</h1>
+    <div class="flowers"></div>
+    <button onclick="goToPhase(2)">Next 💕</button>
+  </div>
+
+  <!-- PHASE 2 -->
+  <div id="phase2" class="phase hidden">
+    <h1>Will you be my Valentine? 💌</h1>
+    <button onclick="answerYes()">Yes 💖</button>
+    <button onclick="goToPhase(4)">No 🙈</button>
+  </div>
+
+  <!-- PHASE 3 -->
+  <div id="phase3" class="phase hidden">
+    <div class="letter">
+      <img src="images/pigface.png" class="pig">
+      <p>
+        <strong>Dear Cherry 🍒</strong><br><br>
+
+        I love you so much more than I could ever fully explain and being with you
+        is one of the greatest gifts in my life. You mean everything to me.
+        You are incredibly beautiful and absolutely gorgeous inside and out.
+        Love your smile, your eyes and the whole you baby.<br><br>
+
+        Lucky to call you mine.<br><br>
+
+        I love you, always and forever ♾️<br><br>
+
+        <strong>Your Daddy</strong>
+      </p>
+
+      <div id="photos"></div>
+    </div>
+  </div>
+
+  <!-- PHASE 4 -->
+  <div id="phase4" class="phase hidden">
+    <h1>Please say yes mommy 🥺👉👈</h1>
+    <button onclick="answerYes()">Okay yes 😭❤️</button>
+  </div>
+
+  <!-- PHASE 5 -->
+  <div id="phase5" class="phase hidden">
+    <h1>I love you baby ❤️</h1>
+    <div id="bouquet"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+      </html>
