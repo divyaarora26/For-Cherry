@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background: #ffb6c1;
+  text-align: center;
+  overflow: hidden;
+}
+
+.phase {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.start-btn {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 30px;
+  font-size: 20px;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  z-index: 999;
+}
+
+.letter {
+  background: #fff;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 15px;
+  animation: pop 1s ease;
+}
+
+.pig {
+  width: 80px;
+}
+
+#photos img {
+  width: 90px;
+  margin: 5px;
+  border-radius: 10px;
+  animation: pop 1s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+/* Falling flowers */
+.flowers span {
+  position: absolute;
+  top: -20px;
+  font-size: 24px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to { transform: translateY(110vh); }
+}
+
+/* Bouquet */
+#bouquet span {
+  font-size: 40px;
+  margin: 5px;
+  animation: pop 1.5s ease;
+    }
